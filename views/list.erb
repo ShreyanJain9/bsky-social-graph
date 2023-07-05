@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= params[:handle] %>'s <%= @title %></title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1><%= params[:handle] %>'s <%= @title %> (<%= @handles.count %>)</h1>
+    <ol>
+      <% @handles.each do |handle| %>
+        <li><%= handle %></li>
+      <% end %>
+    </ol>
+  </body>
+</html>
